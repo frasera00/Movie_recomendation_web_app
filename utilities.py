@@ -9,12 +9,12 @@ def connect_to_demo_db() -> WeaviateClient:
     This database instance has the necessary data loaded.
     """
     client = weaviate.connect_to_wcs(
-        cluster_url="https://juofherxrfgo1cki4ierfa.c1.europe-west3.gcp.weaviate.cloud",                                     # Demo server URL,
-        auth_credentials=weaviate.auth.AuthApiKey("0yM5hbvzEpSXXbI9ahHwEWCcSvloKdMpen5w"),   # Demo server read-only API key
+        cluster_url="<URL_WEAVIATE>",                                     # Demo server URL,
+        auth_credentials=weaviate.auth.AuthApiKey("<WEAVIATE-API-KEY>"),   # Demo server read-only API key
 
         # OpenAI API key for queries that require it
         # Edit this to provide your own
-        headers={"X-OpenAI-Api-Key": "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"},
+        headers={"X-OpenAI-Api-Key": "<OPENAI-API-KEY>"},
     )  
     return client
 
@@ -26,14 +26,14 @@ def connect_to_my_db() -> WeaviateClient:
 
     client = weaviate.connect_to_wcs(
         # Your Weaviate URL - Edit this to match your own Weaviate instance
-        cluster_url="https://fugksjnutb2hwkgrqgknw.c0.europe-west3.gcp.weaviate.cloud",
+        cluster_url="<URL_WEAVIATE>",
 
         # Your Weaviate API Key - Edit this to match your own Weaviate instance
-        auth_credentials=weaviate.auth.AuthApiKey("Vk69jZm3eorAfHSeyslUNh6Tlj373x4wVch2"),
+        auth_credentials=weaviate.auth.AuthApiKey("<WEAVIATE-API-KEY>"),
 
         # OpenAI API key for queries that require it
         # Edit this to provide your own
-        headers={"X-OpenAI-Api-Key": "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"},
+        headers={"X-OpenAI-Api-Key": "<OPENAI-API-KEY>"},
     )
 
     # # Or use a local instance - e.g. with Docker
