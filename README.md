@@ -15,7 +15,7 @@ The MovieApp file is a Streamlit-based web application for movie recommendations
    - Provides AI-powered movie recommendations based on user input.
    - Uses Weaviate's hybrid search and a grouped task to generate recommendations.
 
-The AI concepts used include:
+## AI Concepts used
 
  - Vector Search: Uses embeddings to find semantically similar movies.
  - Keyword Search: Traditional keyword-based search.
