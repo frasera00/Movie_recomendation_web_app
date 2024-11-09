@@ -1,4 +1,4 @@
-# Movie_recomendation_web_app
+# Movie recommendation web app
 
 The MovieApp file is a Streamlit-based web application for movie recommendations, leveraging Weaviate's vector database. Here are the key functionalities and AI concepts used:
 
